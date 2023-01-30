@@ -1,0 +1,9 @@
+<div><h1 class="view-user" *ngIf="userDetails">Detail of  {{ userDetails.name  }}</h1></div>
+<div *ngIf="userDetails" class="view-user">
+  <mat-card class="username">
+    <mat-card-title class="user-item"
+      >{{ userDetails.name }} | {{ userDetails.email }} | {{ userDetails.phone }} | {{ userDetails.gender }} | {{ userDetails.address }}
+      | {{ userDetails.dob }}
+    </mat-card-title>
+  </mat-card>
+</div>
